@@ -1,7 +1,5 @@
 # My Klipper config for the Kingroon KP5L
-(without BLTouch *for now*)
-
-this should work on stock KP5Ls.
+*I am using a BLTouch clone. For original BLTouch, configure it to use `QUERY_PROBE`. For use without BLTouch or similar, comment out/in the marked parts of the config.* 
 
 ## Compiling the firmware
 > There is also a precompiled binary provided that you can use.
@@ -28,6 +26,6 @@ If you get MCU errors, try lowering the Baud rate to 114200 (change in build and
 1. Bed Leveling (https://www.klipper3d.org/Bed_Level.html):
    1. tuning the z endstop switch and physically leveling the bed: https://www.klipper3d.org/Manual_Level.html
    2. leveling the bed in software: https://www.klipper3d.org/Bed_Mesh.html (use the paper test, you don’t need a probe)
-2. Temperature PID Tuning: https://all3dp.com/2/klipper-pid-tune-tuning-3d-printer/
-3. Input shaping: the tech that makes your printer *fast*: https://damlobster.github.io/klipper/Resonance_Compensation.html / https://all3dp.com/2/klipper-input-shaping-simply-explained/
-4. Pressure Advance: https://damlobster.github.io/klipper/Pressure_Advance.html / https://obico.io/blog/klipper-pressure-advance/
+2. Temperature PID Tuning: https://all3dp.com/2/klipper-pid-tune-tuning-3d-printer/ (optional, my values should work for your printer)
+3. Input shaping: the tech that makes your printer *fast*: https://damlobster.github.io/klipper/Resonance_Compensation.html / https://all3dp.com/2/klipper-input-shaping-simply-explained/ (optional, only necessary for fast prints)
+4. Then I followed Ellis’ Print Tuning Guide: https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html
